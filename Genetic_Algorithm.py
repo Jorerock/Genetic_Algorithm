@@ -1,3 +1,4 @@
+#Most basic versions of this algo
 import random
 
 # Constants
