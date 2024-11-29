@@ -24,3 +24,12 @@ def mutate(GENES,individual, mutation_rate=0.1):
         if random.random() < mutation_rate:
             individual[i] = random.choice(GENES)
     return ''.join(individual)
+
+
+
+def RandomTarget(GENES,taille):
+    return ''.join(random.choice(GENES) for _ in range(taille))
+
+
+
+print(RandomTarget('ABCDEFGHIJKLMNOPQRSTUVWXYZ',4))
